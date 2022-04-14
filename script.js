@@ -55,3 +55,15 @@ const lastIndexOf = (arr, elem) => {
 
 let result2 = lastIndexOf(myArr, true);
 console.log(result2);
+
+
+const includes = (arr, elem) => {
+    for (let index in arr) {
+       if (arr[index] !== elem) continue;
+     else if (arr[index] === elem) return true;
+    }
+  return false;
+};
+
+let result3 = includes(myArr, true);
+console.log(result3);
