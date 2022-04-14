@@ -42,3 +42,16 @@ const indexOf = (arr, elem) => {
 
 let result = indexOf(myArr, 150);
 console.log(result);
+
+
+const lastIndexOf = (arr, elem) => {
+    for (let i = arr.length - 1; i >= 0; i--) {
+        if (arr[i] === elem) {
+            return i;
+        }    
+    }
+    return -1;
+};
+
+let result2 = lastIndexOf(myArr, true);
+console.log(result2);
